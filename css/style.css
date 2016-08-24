@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section {
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+a {
+    font-size: 12px;
+    color: #4e89f9;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0.5em 0;
+}
+
+.header {
+    display: block;
+    background: #de6464;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0 0.5em;
+}
+
+.footer {
+    display: block;
+    width: 100%;
+    height: 100px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    background: green;
+    padding: 0 0.5em;
+    text-transform: uppercase;
+}
+
+.chat {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 100px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.chat-users {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.chat-users-list {
+    width: 100%;
+}
+
+.chat-users-list__el {
+    font-size: 12px;
+}
+
+.chat-users-list__el a {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 .5em;
+}
+
+.chat-room {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 10px 210px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.chat-room caption {
+    text-align: left;
+}
+
+.chat-mess {
+
+}
+
+.user-data {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #4e89f9;
+    padding: 4px;
+}
+
+.user-data__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    min-width: 40px;
+    margin: 0;
+}
+
+.user-data__icon-wrap {
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-data__icon img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.user-data__nickname {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 128px;
+    padding: 4px;
+    color: #fff;
+}
+
+.user-data__nickname span {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-mess__user {
+    display: table-cell;
+    width: 20%;
+    max-width: 240px;
+    min-width: 190px;
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+.chat-mess__text {
+    display: table-cell;
+    /*width: 100%;*/
+    vertical-align: top;
+    text-align: left;
+}
+
+.chat-mess__text p {
+    font-size: 12px;
+    margin: 0 0 1em;
+}
